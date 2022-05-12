@@ -1,0 +1,36 @@
+body{
+    background: black;
+}
+.container{
+    background: #0000;
+    margin: 8px;
+    
+}
+.entry{
+    width: 265px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.calc-container{
+    width: 300px;
+    background-color: rgb(9, 114, 138);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 10px;
+}
+.numBut{
+    height: 59px;
+    width: 59px;
+    margin: 10px 4px;
+    border: none !important;
+}
+.mathBut{
+    height: 59px;
+    width: 126px;
+    margin: 10px 4px;
+    border: none !important;
+}
