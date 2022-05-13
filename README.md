@@ -1,2 +1,2 @@
-functioning calculator
+#functioning calculator
 I wanted to test myself using logic and Javascript so I thought making a calculator was a good start in that process. The hardest part for me during this project was getting the face of the calculator lined up as well as getting the buttons to actually work and produce live results when you hit them. This was a fun project and I hope others enjoy interacting with it as well.
