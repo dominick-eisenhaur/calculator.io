@@ -8,11 +8,11 @@ let valMemStored = "";
 function numButPress(num){
    if(resultVal){
        newVal = num;
-       resultVal = ""
+       resultVal = "";
   } else {
       if(num === "."){
           if(decimalClicked != true){
-              newVal +=num;
+              newVal += num;
               decimalClicked = true;
           }
       } else {
@@ -23,9 +23,9 @@ function numButPress(num){
 }
 function mathButPress(operator){
     if(!resultVal){
-        preVal = newVal;
-    } else{
-      preVal = resultVal; 
+        prevVal = newVal;
+    } else {
+      prevVal = resultVal; 
     }
     newVal = "";
     decimalClicked = false;
@@ -33,10 +33,10 @@ function mathButPress(operator){
     resultVal = "";
     document.getElementById("entry").value = "";
 }
-function equalButPress(num){
+function equalButPress(){
     decimalClicked = false;
     prevVal= parseFloat(prevVal);
-    newvVal= parseFloat(newVal); 
+    newVal= parseFloat(newVal); 
 
     switch(mathOperator){
         case "+":
@@ -59,18 +59,18 @@ function equalButPress(num){
     document.getElementById("entry").value = resultVal;
 }
 
-function clearButPress(num){
+function clearButPress(){
      prevVal = "";
      newVal = "";
-     resultVal="";
+     resultVal= "";
      mathOperator= "";
      decimalClicked = false;  
      document.getElementById("entry").value = "0";
 }
-function copyButPress(num){
-    valMemStored = getElementById("entry").value;
+function copyButPress(){
+    valMemStored = document.getElementById("entry").value;
 }
-function pasteButPress(num){
+function pasteButPress(){
    if(valMemStored) {
     document.getElementById("entry").value = valMemStored;
     newVal = valMemStored;
