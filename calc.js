@@ -33,7 +33,7 @@ function mathButPress(operator){
     resultVal = "";
     document.getElementById("entry").value = "";
 }
-function equalButPress(){
+function equalButPress(num){
     decimalClicked = false;
     prevVal= parseFloat(prevVal);
     newVal= parseFloat(newVal); 
@@ -67,10 +67,10 @@ function clearButPress(){
      decimalClicked = false;  
      document.getElementById("entry").value = "0";
 }
-function copyButPress(){
+function copyButPress(num){
     valMemStored = document.getElementById("entry").value;
 }
-function pasteButPress(){
+function pasteButPress(num){
    if(valMemStored) {
     document.getElementById("entry").value = valMemStored;
     newVal = valMemStored;
