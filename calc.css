@@ -1,8 +1,7 @@
 body{
-    background: black;
-}
-.container{
     background: #000000;
+}
+.container{ 
     margin: 8px;
     
 }
